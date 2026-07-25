@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Андрей Габараев — frontend / devtools engineer. Vue, Nuxt, TypeScript, runtime-системы и developer tooling." />
+    <meta name="theme-color" content="#101210" />
+    <title>Андрей Габараев — Frontend / DevTools Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="header shell">
+      <a class="logo" href="#top" aria-label="На главную">AG<span>.</span></a>
+      <nav aria-label="Основная навигация">
+        <a href="#work">Проекты</a><a href="#experience">Опыт</a><a href="#contact">Контакты</a>
+      </nav>
+      <a class="header-contact" href="mailto:gabaraev.andrey@gmail.com">Написать ↗</a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <p class="eyebrow"><span></span> Доступен для сильных продуктовых задач</p>
+        <h1>Создаю frontend-системы, которые <em>держат</em> сложность.</h1>
+        <div class="hero-bottom">
+          <p class="lead">Андрей Габараев — Frontend / DevTools Engineer. Проектирую интерфейсы, runtime-инструменты и архитектуру для продуктов, которыми пользуются каждый день.</p>
+          <div class="hero-actions"><a class="button primary" href="mailto:gabaraev.andrey@gmail.com">Обсудить задачу <b>↗</b></a><a class="button text" href="#work">Смотреть работы ↓</a></div>
+        </div>
+        <div class="signal-grid" aria-label="Ключевые компетенции">
+          <div><strong>4+</strong><span>года коммерческой<br />разработки</span></div>
+          <div><strong>Vue / Nuxt</strong><span>TypeScript, SSR/ISR<br />и продуктовый frontend</span></div>
+          <div><strong>DevTools</strong><span>runtime, WebSocket,<br />Vite и HMR</span></div>
+        </div>
+      </section>
+
+      <section id="work" class="work shell section">
+        <div class="section-head"><p class="eyebrow">01 / Избранное</p><h2>Проекты, где интерфейс — часть инженерной системы.</h2></div>
+        <article class="project featured">
+          <div class="project-number">01</div><div class="project-body"><p class="project-type">OPEN SOURCE · VITE PLUGIN</p><h3>LiveStyleSync</h3><p>Редактирование стилей прямо из браузерного оверлея с записью обратно в исходники. Не имитация DevTools, а полноценный цикл: CSSOM → AST → файл → HMR.</p><ul><li>CSS, SCSS, CSS Modules и Vue scoped styles</li><li>PostCSS AST, WebSocket-синхронизация, восстановление соединения</li><li>Пакеты опубликованы в npm · статья на Хабре — 9,3K просмотров</li></ul><a href="https://github.com/Artyx71/livestylesync" target="_blank" rel="noreferrer">Открыть проект <span>↗</span></a></div>
+          <div class="project-art live-art" aria-hidden="true"><div class="window"><i></i><i></i><i></i><b>style.css</b><code>.card {<br />&nbsp;color: <mark>#d8ff63</mark>;<br />&nbsp;border: 1px solid;<br />}</code></div><div class="cursor">✦</div></div>
+        </article>
+        <div class="project-pair">
+          <article class="project compact"><div><p class="project-type">DEVELOPER EDUCATION</p><h3>ByteDojo</h3><p>Terminal-first среда для тренировки реальных инженерных сценариев: git recovery, shell-навигация, Vim и debugging.</p><a href="https://github.com/Artyx71/ByteDojo" target="_blank" rel="noreferrer">GitHub ↗</a></div><div class="terminal" aria-hidden="true"><span>~/dojo</span><br />$ git reflog<br /><b>HEAD@{1}</b> recover</div></article>
+          <article class="project compact accent"><div><p class="project-type">PRODUCT ENGINEERING</p><h3>B2B Travel CRM</h3><p>Frontend с нуля для поиска, бронирования и сопровождения туров — с интеграциями, сложными формами и AI-поиском.</p><span class="quiet-link">Слетать.ру · 2024—2026</span></div><div class="route" aria-hidden="true"><i></i><i></i><i></i><i></i></div></article>
+        </div>
+      </section>
+
+      <section id="experience" class="experience shell section">
+        <div class="section-head"><p class="eyebrow">02 / Опыт</p><h2>Вникаю в домен, чтобы делать не просто UI.</h2></div>
+        <div class="roles">
+          <article><div class="role-meta"><span>2024 — 2026</span><span>удалённо</span></div><div><h3>Слетать.ру <small>Frontend-разработчик</small></h3><p>Запустил B2B CRM с нуля: модульная архитектура, интеграционный слой REST API, многошаговое бронирование с восстановлением прогресса и AI-агент для подбора туров.</p></div></article>
+          <article><div class="role-meta"><span>2023 — 2024</span><span>Владикавказ / удалённо</span></div><div><h3>O2 <small>Frontend-разработчик</small></h3><p>AI SaaS, agritech и retail: real-time транскрибация через WebSocket, масштабные таблицы и дашборды, SSR/ISR и Core Web Vitals.</p></div></article>
+          <article><div class="role-meta"><span>2022 — 2023</span><span>Владикавказ</span></div><div><h3>ABETA <small>Frontend-разработчик</small></h3><p>CRM и личные кабинеты: RBAC, типобезопасный GraphQL + Apollo, библиотека UI-компонентов и поддержка production-систем.</p></div></article>
+        </div>
+      </section>
+
+      <section class="stack shell section"><p class="eyebrow">03 / Инструменты</p><div class="stack-list"><span>Vue 3</span><span>Nuxt</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Vite</span><span>WebSocket</span><span>GraphQL</span><span>Node.js</span><span>Electron</span><span>Docker</span></div></section>
+      <section id="contact" class="contact shell"><p class="eyebrow">04 / Связь</p><h2>Есть задача, где<br /><em>важна инженерия?</em></h2><a class="contact-mail" href="mailto:gabaraev.andrey@gmail.com">gabaraev.andrey@gmail.com <span>↗</span></a><div class="contact-links"><a href="https://t.me/Artyx71" target="_blank" rel="noreferrer">Telegram</a><a href="https://github.com/Artyx71" target="_blank" rel="noreferrer">GitHub</a><a href="tel:+79288555205">+7 928 855-52-05</a></div></section>
+    </main>
+    <footer class="shell"><span>© 2026 Андрей Габараев</span><span>Владикавказ · работаю удалённо</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
