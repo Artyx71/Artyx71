@@ -2,6 +2,7 @@
 
 Frontend / DevTools Engineer.
 
+# Open to offers
 I build frontend systems, developer tooling and runtime-heavy web applications.
 
 I care about:
